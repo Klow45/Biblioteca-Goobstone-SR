@@ -1,0 +1,12 @@
+procedure Sacar_DeColor_(cantidadASacar, colorASacar){
+    /*
+    Propósito: Sacar la cantidad dada "cantidadASacar" de bolitas de color "colorASacar".
+    Parametros:
+        * cantidadASacar: Número
+        * colorASacar: Color
+    Precondicíon: Debe haber almenos "cantidadASacar" bolitas de color "colorASacar" en la celda actual.
+    */
+    repeat(cantidadASacar){
+        Sacar(colorASacar)
+    }
+}
