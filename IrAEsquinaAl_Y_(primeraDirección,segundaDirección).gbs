@@ -1,0 +1,11 @@
+procedure IrAEsquinaAl_Y_(primeraDirección,segundaDirección){
+    /*
+    Propósito: Ir a la esquina dada en "primeraDirección" y luego ir a la esquina "segundaDirección".
+    Parametros:
+        * primeraDirección: Dirección
+        * segundaDirección: Dirección
+    Precondicíon: Debe haber almenos una celda en "primeraDirección" y otra celda en "segundaDirección".
+    */
+    IrAlBorde(primeraDirección)
+    IrAlBorde(segundaDirección)
+}
