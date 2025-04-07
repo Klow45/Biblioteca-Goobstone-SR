@@ -1,0 +1,12 @@
+procedure Mover_VecesAl_(cantidadAMover, direcciónAMover){
+    /*
+    Propósito: Mover el cabezal dada "cantidadAMover" a la dirección "direcciónAMover".
+    Parametros:
+        * cantidadAMover: Número
+        * direcciónAMover: Dirección
+    Precondicíon: Debe haber almenos la cantidad necesaria dada en "cantidadAMover" y a la dirección "direcciónAMover".
+    */
+    repeat(cantidadAMover){
+        Mover(direcciónAMover)
+    }
+}
