@@ -1,0 +1,36 @@
+program{
+    repeat(12){             // Esto es un pasaje de parametros para que se pueda sacar las bolitas y el programa funcione pero no es parte del procedimiento.
+        Poner(Rojo)
+    }
+    SacarTodasLasDeColor_(Rojo)
+}
+
+
+procedure SacarTodasLasDeColor_(colorASacar){
+    /*
+    Propósito: Sacar todas las bolitas de color dada en "colorASacar" en la celda actual.
+    Parametro:
+        * colorASacar: Color
+    Precondición: Es necesario saber cuantas bolitas hay que sacar.
+    */
+    Sacar_DeColor_(10, colorASacar)
+}
+
+procedure Sacar_DeColor_(cantidadASacar, colorASacar){
+    /*
+    Propósito: Sacar la cantidad dada "cantidadASacar" de bolitas de color "colorASacar".
+    Parametros:
+        * cantidadASacar: Número
+        * colorASacar: Color
+    Precondicíon: Debe haber almenos "cantidadASacar" bolitas de color "colorASacar" en la celda actual.
+    */
+    repeat(cantidadASacar){
+        Sacar(colorASacar)
+    }
+}
+
+/* 
+    Respondiendo a la pregunta del enunciado "¿PISTA: Considerar utilizar el procedimiento Sacar_DeColor_, 
+    definido en la práctica anterior. ¿Qué argumentos se le deberían pasar?" el argumento que se tuvo que pasar es el de la cantidad de bolitas
+    a quitar, ya que si solo defino sacar bolitas, sacaria una sola y no vaciaria la celda
+*/
