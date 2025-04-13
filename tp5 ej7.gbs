@@ -1,0 +1,52 @@
+program{
+    repeat(12){
+        Poner(Rojo)         // Pasaje de parametros, No es parte del procedimiento VaciarCelda.
+        Poner(Azul)
+        Poner(Verde)
+        Poner(Negro)
+    }
+    VaciarCelda()
+}
+
+procedure VaciarCelda(){
+    /*
+    Propósito: Quita todas las bolitas de todos los colores de la celda actual, dejándola vacía.
+    Precondición:
+    */
+    Vaciar_(Negro)
+    Vaciar_(Verde)
+    Vaciar_(Azul)
+    Vaciar_(Rojo)
+}
+
+procedure Vaciar_(color){
+    /*
+    Propósito: Vaciar la celda del color dado en "color".
+    Parametro:
+        * color: Color
+    */
+    SacarTodasLasDeColor_(color)
+}
+
+procedure SacarTodasLasDeColor_(colorASacar){
+    /*
+    Propósito: Sacar todas las bolitas de color dada en "colorASacar" en la celda actual.
+    Parametro:
+        * colorASacar: Color
+    Precondición: Es necesario saber cuantas bolitas hay que sacar.
+    */
+    Sacar_DeColor_(10, colorASacar)
+}
+
+procedure Sacar_DeColor_(cantidadASacar, colorASacar){
+    /*
+    Propósito: Sacar la cantidad dada "cantidadASacar" de bolitas de color "colorASacar".
+    Parametros:
+        * cantidadASacar: Número
+        * colorASacar: Color
+    Precondicíon: Debe haber almenos "cantidadASacar" bolitas de color "colorASacar" en la celda actual.
+    */
+    repeat(cantidadASacar){
+        Sacar(colorASacar)
+    }
+}
