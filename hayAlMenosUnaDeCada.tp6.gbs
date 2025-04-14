@@ -1,0 +1,12 @@
+function hayAlMenosUnaDeCada(){
+    /*
+    Propósito: Indica si hay al menos una bolita de cada color.
+    Parametros: Ninguno.
+    Precondición: Ninguna.
+    Tipo: Booleano
+    */
+    return(
+        hayBolitas(Azul) && hayBolitas(Negro) 
+        hayBolitas(Rojo) && hayBolitas(Verde) 
+        )
+}
