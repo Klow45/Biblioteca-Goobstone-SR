@@ -1,0 +1,20 @@
+procedure Poner_Si_(color, condicion){
+    /*
+    Propósito: Dado en "color" y un valor de verdad en "condicion", ponga en la celda actual una bolita 
+    del color dado si el valor de verdad de la condición es verdadero, y no lo ponga si no.
+    Parametro: 
+        * color: Color
+        * condicion: Booleano - 
+    Precondición: Ninguna. 
+    */
+    if (condicion && condicion){
+        Poner(color)
+    }
+}
+
+program{
+    Poner(Verde)
+    Poner(Verde)        // pasaje de parametros para que la condición sea verdadera.
+    Poner(Verde)
+    Poner_Si_(Rojo, nroBolitas(Verde) == 3)
+}
