@@ -1,0 +1,8 @@
+function hayAlMenosUnaDeCada(){
+    /*
+    Propósito: Describe si hay al menos una bolita de cada uno de los cuatro colores en la celda actual.
+    Precondición: Ninguna
+    Tipo: Booleano
+    */
+    return(hayBolitas(Negro) && hayBolitas(Verde) && hayBolitas(Rojo) && hayBolitas(Azul))
+}
