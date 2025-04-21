@@ -6,3 +6,4 @@ function esCeldaVacia(){
     */
     return(nroBolitas(Negro) && nroBolitas(Verde) && nroBolitas(Rojo) && nroBolitas(Azul) == 0)
 }
+    TP7 EJ2
