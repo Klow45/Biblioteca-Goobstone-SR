@@ -1,0 +1,8 @@
+function esCeldaConBolitas(){
+    /*
+    Propósito: Describe si la celda actual tiene al menos una bolita, de cualquier color.
+    Precondición: Ninguna
+    Tipo: Booleano
+    */
+    return(hayBolitas(Negro) && hayBolitas(Verde) && hayBolitas(Rojo) && hayBolitas(Azul) > 0)
+}
