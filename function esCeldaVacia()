@@ -1,0 +1,8 @@
+function esCeldaVacia(){
+    /*
+    Propósito: Describe si la celda actual se encuentra vacía.
+    Precondición: Ninguna
+    Tipo: Booleano
+    */
+    return(nroBolitas(Negro) && nroBolitas(Verde) && nroBolitas(Rojo) && nroBolitas(Azul) == 0)
+}
