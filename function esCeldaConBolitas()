@@ -6,3 +6,4 @@ function esCeldaConBolitas(){
     */
     return(hayBolitas(Negro) && hayBolitas(Verde) && hayBolitas(Rojo) && hayBolitas(Azul) > 0)
 }
+    TP7 EJ2
