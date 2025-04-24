@@ -1,0 +1,13 @@
+procedure IrAlBorde_(dirección){
+    /*
+    Propósito:
+        * Llevar el cabezal al borde del tablero en la "direccion" dada.
+    Parametro:
+        * direccion - direccion
+    Precondición:
+        * Ninguna
+    */
+    while puedeMover(direccion){
+        Mover(direccion)
+    } 
+} 
