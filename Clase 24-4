@@ -1,0 +1,16 @@
+/*
+Es un recorrid de busqueda con procesamiento sabiendo 
+que está sobre el camino, buscando la casa de la bruja
+*/
+
+
+
+
+IrAlPrimerAula()
+while (not estoyEnLaCasaDeLaBruja()){
+    DejarMiguitas()
+    AvanzarEnElCamino()
+}
+
+// Es recomendable no mezclar recorrido de 
+// busquedas y procedimientos
