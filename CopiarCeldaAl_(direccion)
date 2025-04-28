@@ -11,11 +11,11 @@ procedure  CopiarCeldaAl_(direccion){
     cantidadDeRojos:=nroBolitas(Rojo)   
     cantidadDeNegras:=nroBolitas(Negro)
     Mover(direccion)
-    VaciarCelda()
-    Poner_DeColor_(cantidadDeAzules, Azul)
-    Poner_DeColor_(cantidadDeVerdes, Verde)
-    Poner_DeColor_(cantidadDeRojos, Rojo)
-    Poner_DeColor_(cantidadDeNegras, Negro)
+    VaciarCelda() // Biblioteca
+    Poner_DeColor_(cantidadDeAzules, Azul) // Biblioteca
+    Poner_DeColor_(cantidadDeVerdes, Verde) // Biblioteca
+    Poner_DeColor_(cantidadDeRojos, Rojo) // Biblioteca
+    Poner_DeColor_(cantidadDeNegras, Negro) // Biblioteca
 }
 
 procedure VaciarCelda(){
