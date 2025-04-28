@@ -1,0 +1,22 @@
+procedure VaciarCelda(){
+    /*
+    Propósito: Quita todas las bolitas de la celda actual.
+    Precondición: Ninguna. 
+    */
+    QuitarBolitasDe_(Azul)
+    QuitarBolitasDe_(Verde)
+    QuitarBolitasDe_(Rojo)
+    QuitarBolitasDe_(Negro)
+}
+
+procedure QuitarBolitasDe_(colorASacar){
+    /*
+    Propósito: Quita las bolitas de color "colorASacar" de la celda actual.
+    Precondición: Debe de existir al menos una bolita de color "colorASacar".
+    Parametros:
+        * colorASacar: Color - Color de la bolita a quitar
+    */
+    repeat(nroBolitas(colorASacar)){
+        Sacar(colorASacar)
+    }
+}
