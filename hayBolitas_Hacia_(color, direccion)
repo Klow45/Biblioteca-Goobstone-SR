@@ -1,0 +1,11 @@
+function  hayBolitas_Hacia_(color, direccion){
+    /*
+    Propósito: Indica si hay una celda lindante en direccion "direccion" y si la misma tiene alguna
+    bolita de color "color".
+    Parametros:
+        * color: color - Es el color de la bolita. 
+        * direccion: direccion a moverse.
+    Tipo: Booleano.
+    */
+    return(puedeMover(direccion) && hayBolitas_EnCeldaAl_(color, direccion))
+}
