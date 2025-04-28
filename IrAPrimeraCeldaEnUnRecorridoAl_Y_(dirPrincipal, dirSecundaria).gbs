@@ -1,0 +1,17 @@
+procedure IrAPrimeraCeldaEnUnRecorridoAl_Y_(dirPrincipal, dirSecundaria){
+    /*
+    Propósito: Ir a la primera de celda de un recorrido al "dirPrincipal" y "dirSecundaria".
+    Precondición: "dirPrincipal" y "dirSecundaria" no pueden ser opuestos e iguales.
+    Parametros:  
+        * dirPrincipal: dirección - es la direccion principal a mover.
+        * dirSecundaria: dirección - es la direccion secundaria a mover.
+    */
+    IrAlBorde(opuesto(dirPrincipal))
+    IrAlBorde(opuesto(dirSecundaria))
+}
+
+program {
+    IrAPrimeraCeldaEnUnRecorridoAl_Y_(Sur, Este)
+}
+
+
