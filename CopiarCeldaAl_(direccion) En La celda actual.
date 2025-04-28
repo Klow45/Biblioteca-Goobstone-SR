@@ -1,0 +1,35 @@
+procedure  CopiarCeldaAl_(direccion){
+    /*
+    Propósito: Copia los contenidos de la celda actual a la celda lindante en la direccion
+    "direccion".
+    Precondición: Debe de haber una celda en la dirección "direccion".
+    Parametros:
+        * direccion: Es la direccion de la celda a copiar.
+    */
+    cantidadDeAzules:=nroBolitas(Azul)   
+    cantidadDeVerdes:=nroBolitas(Verde)   
+    cantidadDeRojos:=nroBolitas(Rojo)   
+    cantidadDeNegras:=nroBolitas(Negro)
+    Mover(direccion)
+    Poner_DeColor_(cantidadDeAzules, Azul)
+    Poner_DeColor_(cantidadDeVerdes, Verde)
+    Poner_DeColor_(cantidadDeRojos, Rojo)
+    Poner_DeColor_(cantidadDeNegras, Negro)
+}
+
+procedure Poner_DeColor_(cantidadAPoner, colorAPoner){
+    /*
+    Propósito: Poner dada "cantidadAPoner" de bolitas de color "colorAPoner".
+    Parametros:
+        * cantidadAPoner: Número
+        * colorAPoner: Color
+    Precondicíon: Ninguna.
+    */
+    repeat(cantidadAPoner){
+        Poner(colorAPoner)
+    }
+}
+
+program{
+    CopiarCeldaAl_(Este)
+}
