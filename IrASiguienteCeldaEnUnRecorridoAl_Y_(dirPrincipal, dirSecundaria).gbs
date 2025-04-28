@@ -1,0 +1,24 @@
+procedure IrASiguienteCeldaEnUnRecorridoAl_Y_(dirPrincipal, dirSecundaria){
+    /*
+    Propósito: Mueve el cabezal a la siguiente celda del recorrido en dirección "dirPrincipal" 
+    y "dirSecundaria"
+    Precondición: "dirPrincipal" y "dirSecundaria" no pueden ser opuestos e iguales.
+    Tipo: booleano
+    Parametros:  
+        * dirPrincipal: dirección - es la direccion principal a mover.
+        * dirSecundaria: dirección - es la direccion secundaria a mover.
+    */
+    
+    if (puedeMover(dirPrincipal)){
+        Mover(dirPrincipal)
+    } else {
+        IrAlBorde(opuesto(dirPrincipal))
+        Mover(dirSecundaria)
+    }
+}
+
+
+program {
+    IrASiguienteCeldaEnUnRecorridoAl_Y_(Sur, Este)
+}
+
