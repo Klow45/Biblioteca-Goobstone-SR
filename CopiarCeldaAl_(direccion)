@@ -1,0 +1,60 @@
+procedure  CopiarCeldaAl_(direccion){
+    /*
+    Propósito: Copia los contenidos de la celda actual a la celda lindante em la direccion
+    "direccion".
+    Precondición: Debe de haber una celda en la dirección "direccion".
+    Parametros:
+        * direccion: Es la direccion de la celda a copiar.
+    */
+    VaciarCelda()
+    Mover(direccion)
+    cantidadDeAzules:=nroBolitas(Azul)   
+    cantidadDeVerdes:=nroBolitas(Verde)   
+    cantidadDeRojos:=nroBolitas(Rojo)   
+    cantidadDeNegras:=nroBolitas(Negro)
+    Mover(opuesto(direccion))
+    Poner_DeColor_(cantidadDeAzules, Azul)
+    Poner_DeColor_(cantidadDeVerdes, Verde)
+    Poner_DeColor_(cantidadDeRojos, Rojo)
+    Poner_DeColor_(cantidadDeNegras, Negro)
+}
+
+procedure VaciarCelda(){
+    /*
+    Propósito: Quita todas las bolitas de la celda actual.
+    Precondición: Ninguna. 
+    */
+    QuitarBolitasDe_(Azul)
+    QuitarBolitasDe_(Verde)
+    QuitarBolitasDe_(Rojo)
+    QuitarBolitasDe_(Negro)
+}
+
+procedure QuitarBolitasDe_(colorASacar){
+    /*
+    Propósito: Quita las bolitas de color "colorASacar" de la celda actual.
+    Precondición: Debe de existir al menos una bolita de color "colorASacar".
+    Parametros:
+        * colorASacar: Color - Color de la bolita a quitar
+    */
+    repeat(nroBolitas(colorASacar)){
+        Sacar(colorASacar)
+    }
+}
+
+procedure Poner_DeColor_(cantidadAPoner, colorAPoner){
+    /*
+    Propósito: Poner dada "cantidadAPoner" de bolitas de color "colorAPoner".
+    Parametros:
+        * cantidadAPoner: Número
+        * colorAPoner: Color
+    Precondicíon: Ninguna.
+    */
+    repeat(cantidadAPoner){
+        Poner(colorAPoner)
+    }
+}
+
+program{
+    CopiarCeldaAl_(Este)
+}
