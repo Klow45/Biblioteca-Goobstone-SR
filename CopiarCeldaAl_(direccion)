@@ -6,13 +6,12 @@ procedure  CopiarCeldaAl_(direccion){
     Parametros:
         * direccion: Es la direccion de la celda a copiar.
     */
-    VaciarCelda()
-    Mover(direccion)
     cantidadDeAzules:=nroBolitas(Azul)   
     cantidadDeVerdes:=nroBolitas(Verde)   
     cantidadDeRojos:=nroBolitas(Rojo)   
     cantidadDeNegras:=nroBolitas(Negro)
-    Mover(opuesto(direccion))
+    Mover(direccion)
+    VaciarCelda()
     Poner_DeColor_(cantidadDeAzules, Azul)
     Poner_DeColor_(cantidadDeVerdes, Verde)
     Poner_DeColor_(cantidadDeRojos, Rojo)
