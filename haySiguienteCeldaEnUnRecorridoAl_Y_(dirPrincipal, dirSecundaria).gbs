@@ -1,0 +1,13 @@
+function haySiguienteCeldaEnUnRecorridoAl_Y_(dirPrincipal, dirSecundaria){
+    /*
+    Propósito: Indica si hay siguiente celda en un recorrido hacia dirección "dirPrincipal" y "dirSecundaria"
+    Precondición: "dirPrincipal" y "dirSecundaria" no pueden ser opuestos e iguales.
+    Tipo: booleano
+    Parametros:  
+        * dirPrincipal: dirección - es la direccion principal a mover.
+        * dirSecundaria: dirección - es la direccion secundaria a mover.
+    */
+    return (puedeMover(dirPrincipal) || puedeMover(dirSecundaria))
+}
+
+
