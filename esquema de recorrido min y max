@@ -1,0 +1,29 @@
+function direccionConMayorDistanciaAlBorde(){
+    /*
+    Propósito: Describe la dirección para la cual la distancia al borde desde la celda actual sea la mayor.
+    Precondición: Ninguna
+    Tipo: Direccion.
+    Observación: Es un recorrido de busqueda sabiendo que está sobre direcciones, (aca pongo lo que hago con el elemento)buscando la de mayor distancia al 
+    borde. Devolviendo la direccion con mayor distancia al borde.
+    */
+    
+    direccionActual := minDir() 
+    while (not esLaDrireccionDeMayorDistanciaAlBorde() ){
+        direccionActual := siguiente(direccionActual)
+    }
+    direccionActual := siguiente(direccion)
+    
+    return (direccionActual)
+}
+
+
+// ESQUEMA DE RECORRIDO DE MINIMO Y MAXIMO
+
+// Ir al primer elemento
+// Recordar que el mejor hasta ahora es el primero
+while (/*quedan elementos por recorrer*/){
+    // Ir al siguiente elemento
+    // Recordar que el mejor hasta ahora es el mejor
+    // el que era el mejor hasta ahora y el actual
+}
+return(/*el mejor hasta ahora*/)
