@@ -20,6 +20,7 @@ function direccionConMayorDistanciaAlBorde(){
 // ESQUEMA DE RECORRIDO DE MINIMO Y MAXIMO
 
 // Ir al primer elemento
+direccionActual := minDir()
 // Recordar que el mejor hasta ahora es el primero
 while (/*quedan elementos por recorrer*/){
     // Ir al siguiente elemento
