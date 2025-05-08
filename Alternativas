@@ -1,0 +1,17 @@
+// Alternativa condicional 
+if (condicion) {
+    Opción1
+} elseif (condicion2){
+    Opción2   
+} else {
+    OpcionNegada.
+}
+
+
+// Alternativa condicional en expreciones 
+choose Opción when (Condicion)
+       Opción2 otherwise
+ 
+ 
+choose True when (C)
+       (X) otherwise
