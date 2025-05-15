@@ -1,0 +1,32 @@
+// Punto 20
+
+function nroFilas(){
+    /*
+    PROPÓSITO: describe la cantidad de filas del tablero.
+    PRECONDICIÓN: Ninguna.
+    TIPO: Número.
+    */
+    
+    IrAEsquina_Y_(Sur, Este) // biblioteca
+    cantidadDeFilas:= 1
+    while (puedeMover(Norte)){
+        Mover(Norte)
+        cantidadDeFilas:= cantidadDeFilas + 1
+    }
+    return (cantidadDeFilas)
+}
+
+function nroColumnas(){
+    /*
+    PROPÓSITO: describe la cantidad de columnas del tablero.
+    PRECONDICIÓN: Ninguna.
+    TIPO: Número.
+    */
+    IrAEsquina_Y_(Sur, Este) // biblioteca
+    cantidadDeColumnas:= 1
+    while (puedeMover(Oeste)){
+        Mover(Oeste)
+        cantidadDeColumnas:= cantidadDeColumnas + 1
+    }
+    return (cantidadDeColumnas)
+}
