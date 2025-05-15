@@ -1,0 +1,19 @@
+function coordenadaX(){
+    /*
+    PROPÓSITO: describe la coordenada de fila desde la celda actual.
+    PRECONDICIÓN: El cabezal solo puede moverse hacia el oeste.
+    TIPO: Número
+    */
+    return (distanciaAlBorde_(Oeste))
+    
+}
+
+function coordenadaY(){
+    /*
+    PROPÓSITO: describe la coordenada de columna desde la celda actual.
+    PRECONDICIÓN: El cabezal solo puede moverse hacia el oeste.
+    TIPO: Número
+    */
+    return (distanciaAlBorde_(Sur))
+    
+}
