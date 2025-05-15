@@ -1,0 +1,23 @@
+// Punto 23
+
+function nroBolitasTotalDeColor_(color){
+    /*
+    PROPÓSITO: describe la cantidad de bolitas del color dado que hay en todo el tablero.
+    PRECONDICIÓN: Ninguna.
+    PARAMETROS: 
+        * color: color -es el color de las bolitas del tablero. 
+    TIPO: Número.
+    OBSERVACIÓN: Es un recorrido de acumulación del tablero, por celdas con bolitas de color "color"
+    */
+    
+    cantidadDeBolitasDeColor:= 0
+    IrALaPrimeraCeldaEnUnRecorridoAl_Y_(Este, Norte)
+    while (haySiguienteCeldaEnUnRecorridoal_Y_(Este, Norte)){
+        cantidadDeBolitasDeColor:= cantidadDeBolitasDeColor + nroBolitas(color)
+        IrASiguienteCeldaEnUnRecorridoAl_Y_(Este, Norte)
+    }
+    
+    return(cantidadDeBolitasDeColor + nroBolitas(color))
+    
+    
+}
