@@ -1,0 +1,20 @@
+//PUNTO 17
+
+function distanciaAlBorde_(borde){
+    /*
+    PROPÓSITO: describe la cantidad de celdas que hay entre la celda actual
+    y el borde indicado.
+    PRECONDICIÓN: Ninguna.
+    TIPO: direccion
+    PARAMETRO: 
+        *borde: direccion - es la direccion del borde
+    */
+    cantidadDeCeldas:= 0
+    while(puedeMover(Norte)){
+        Mover(Norte)
+        cantidadDeCeldas:= cantidadDeCeldas + 1
+    }
+    
+    return(cantidadDeCeldas)
+    
+}
