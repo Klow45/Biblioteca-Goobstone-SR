@@ -1,0 +1,13 @@
+function unoSi_ceroSiNo(condicion){
+    /*
+    PROPÓSITO: describe 1 si y sólo si se cumple la condición. Sino, describe 0.
+    PRECONDICIÓN: Ninguna.
+    TIPO: Número.
+    PARAMETRO:
+        * Condicion: Booleano
+    */
+    return(
+        choose 1 when (condicion)
+               0 otherwise
+        )
+}
