@@ -1,0 +1,20 @@
+
+
+// Punto 21
+
+
+function nroVacías(){
+    /*
+    PROPÓSITO: describe la cantidad de celdas vacías del tablero.
+    PRECONDICIÓN: Ninguna.
+    TIPO: Número.
+    OBSERVACIÓN: Es un recorrido de acumulación del tablero, por celdas vacías
+    */
+    cantidadDeCeldasVacias:= 0
+    IrALaPrimeraCeldaEnUnRecorridoAl_Y_(Este, Norte)
+    while (haySiguienteCeldaEnUnRecorridoal_Y_(Este, Norte)){
+        cantidadDeCeldasVacias:= cantidadDeCeldasVacias + nroDeCeldasVacias()
+        IrASiguienteCeldaEnUnRecorridoAl_Y_(Este, Norte)
+    }
+    return(cantidadDeCeldasVacias + nroDeCeldasVacias())
+}
